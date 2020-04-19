@@ -1,0 +1,18 @@
+body{
+    
+    width: 600px;
+	margin: 0 auto;
+
+    
+}
+h1{
+	text-align: center;
+}
+
+#micanvas{
+	border:groove 2px red;
+	background: black;
+	box-shadow: 10px 10px 10px #cccc;
+	background-position: center;
+	justify-content: center;
+}
