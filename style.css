@@ -141,10 +141,11 @@ body{
 
 
 
-.menu span {
+.menu > .icon-align-justify{
 	display:none;
+	background: ;
+	
 }
-
 
 /*img del haeder*/
 
@@ -298,7 +299,7 @@ body{
 	background: var(--blue);
 }
 
-  /*Acerca de nosotros*/
+  /*Acerca de nosotros
 
 /*Nuestros Proyectos*/
 .our-projecto{
@@ -514,7 +515,7 @@ background: rgba(0, 0, 0, 0.6);
 	background: red;
 	width:100%;
 	height: 100%;
-	background: url(./img/css.jpg);
+	background: url(./img/f1.jpg);
 	background-attachment: fixed;
 	background-position:  center;
 	background-size: cover;
@@ -675,3 +676,68 @@ margin-bottom: 10px;
 	font-size: 20px;
 }
 /*footer-furmulario
+
+
+/*Mdia quiri*/
+
+
+ 
+
+@media screen and (min-aspect-ratio: 1/1) { 
+
+ .menu > .icon-align-justify {
+   display:block;
+	position: absolute;
+	top:20px;
+	right: 30px;
+	background: #ccc;
+	font-size: 40px;
+	cursor: pointer;
+
+
+  }.menu .lista-container{
+	position: absolute;
+	top:60px;
+	left: -100%;
+	width: 100%;
+	height: calc(100vh -60px);
+	background: #fff;
+
+
+
+}.menu .lista-container .lista{
+ 
+ width: 100%;
+ height: 100vh;    /*pendiente*/
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+border-top: 5px solid var(--red);
+
+}.menu .lista-container .lista li{
+	width: 90%;
+	margin:10px  0px ;
+	border-bottom: 1px solid var(--red);
+	text-align: center;
+
+}.menu .lista-container .lista li a{
+
+	font-size: 25px;
+
+	}.menu .lista-container .lista li a.active{
+
+		background:none;
+		color:var(--red);
+
+	}.menu .lista-container .lista li a:hover{
+		background: none;
+		color:var(--red);
+	}
+
+
+ }
+
+
+
+
