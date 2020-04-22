@@ -28,7 +28,7 @@ body{
 .gotop{
     position:fixed;
     bottom: 100px;
-    right: 0px;
+    right: -100%;
     width: 50px;
     height: 50px;
     border: 2px solid var(--red);
@@ -55,6 +55,25 @@ body{
 
 }
 
+/*skew */
+.skew-abajo{
+	position: absolute;
+	bottom: 0;
+	left:0;
+	border-width: 0 0 10vh 100vw;
+	border-style:solid;
+	border-color:transparent transparent #fff transparent;
+}
+
+.skew-arriba{
+	position: absolute;
+	top: 0;
+	left:0;
+	border-width:  10vh 100vw 0 0;
+	border-style:solid;
+	border-color: #fff transparent transparent transparent;
+	z-index: 10;
+}
 .gotop:hover span{
 	color:var(--white);
 	ba
@@ -121,19 +140,19 @@ body{
  	color: var(--black);
  	border-radius: 15px;
  	font-size: 16px;
- 	transition: 0.3s;
+ 	transition: 0.5s;
 	
 }
 
 
 .menu .lista-container .lista li a.activo{
 	background: var(--red);
-	color:#fff;;
+	color:#fff;
 }
 
 .menu .lista-container .lista li a:hover{
 	background: var(--red);
-	color:#fff;;
+	color:#fff;
 }
 
   
@@ -356,7 +375,7 @@ background: rgba(0, 0, 0, 0.6);
 
 
 .our-projecto  .container-proyectos .project-title h2{
-    font-size: 40px;
+    font-size: 30px;
     color:#fff;
     font-weight: normal;
 
@@ -683,7 +702,8 @@ margin-bottom: 10px;
 
  
 
-@media screen and (min-aspect-ratio: 1/1) { 
+/*@media screen and (max-aspect-ratio: 1/1) */
+@media (max-width: 600px) { 
 
  .menu > .icon-align-justify {
    display:block;
@@ -695,7 +715,9 @@ margin-bottom: 10px;
 	cursor: pointer;
 
 
-  }.menu .lista-container{
+  }.menu .lista-container
+   
+    {   
 	position: absolute;
 	top:60px;
 	left: -100%;
@@ -737,7 +759,24 @@ border-top: 5px solid var(--red);
 
 
  }
-
+ 
+ @media (max-width: 773px){
+ 	/*img header*/
+ 	.img-header .welcome h1{
+ 		font-size: 40px;
+ 	}
+ 	#header .welcome > button{
+ 		width: 130px;
+ 		font-size: 20px;
+ 	}
+ 	/*Acerca de nosotros*/
+ 	.acerca-de .info-container .galeria{
+ 		flex-direction:column;
+ 	}
+ 	.acerca-de .info-container .galeria img{
+ 		width:100%;
+ 	}
+ }
 
 
 
